@@ -1,0 +1,13 @@
+/* ac commit1
+*/
+SELECT DISTINCT CITY 
+FROM STATION
+WHERE CITY NOT regexp '^[AEIOU]' OR CITY NOT regexp '[AEIOU]$';
+
+
+
+/*
+*/
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY regexp '^[^AEIOU]' OR CITY regexp '[^AEIOU]$';
